@@ -1,0 +1,114 @@
+[
+  {
+    "query_id": "q01",
+    "query": "CUSTOM_CONFIG_FLAG_XYZ",
+    "query_type": "lexical",
+    "target_section": "feature-flags-and-custom-config-flag-xyz",
+    "target_phrase": "CUSTOM_CONFIG_FLAG_XYZ enables the experimental deterministic route planner"
+  },
+  {
+    "query_id": "q02",
+    "query": "ECONNRESET pooled connection",
+    "query_type": "lexical",
+    "target_section": "connection-pooling-and-econnreset",
+    "target_phrase": "ECONNRESET commonly appears when an upstream closes an idle socket"
+  },
+  {
+    "query_id": "q03",
+    "query": "retry_after_ms 429",
+    "query_type": "lexical",
+    "target_section": "rate-limiting-and-backoff",
+    "target_phrase": "returns HTTP 429 and a retry_after_ms field"
+  },
+  {
+    "query_id": "q04",
+    "query": "X-Asteria-Trace",
+    "query_type": "lexical",
+    "target_section": "observability-and-trace-correlation",
+    "target_phrase": "X-Asteria-Trace identifier"
+  },
+  {
+    "query_id": "q05",
+    "query": "maxUnavailable zero",
+    "query_type": "lexical",
+    "target_section": "zero-downtime-rolling-deployments",
+    "target_phrase": "Set maxUnavailable to 0"
+  },
+  {
+    "query_id": "q06",
+    "query": "Idempotency-Key duplicate POST",
+    "query_type": "lexical",
+    "target_section": "idempotency-and-request-replay",
+    "target_phrase": "clients should send an Idempotency-Key"
+  },
+  {
+    "query_id": "q07",
+    "query": "How can I deploy new versions without interrupting active traffic?",
+    "query_type": "semantic",
+    "target_section": "zero-downtime-rolling-deployments",
+    "target_phrase": "zero-downtime rollout drains old workers"
+  },
+  {
+    "query_id": "q08",
+    "query": "How do I change signing secrets without bouncing gateway processes?",
+    "query_type": "semantic",
+    "target_section": "credential-rotation-without-restart",
+    "target_phrase": "supports hot credential rotation"
+  },
+  {
+    "query_id": "q09",
+    "query": "Prevent network socket starvation in client pools",
+    "query_type": "semantic",
+    "target_section": "connection-pooling-and-econnreset",
+    "target_phrase": "upstream connection pool reuses TCP connections"
+  },
+  {
+    "query_id": "q10",
+    "query": "How should clients slow down after they exceed service quota?",
+    "query_type": "semantic",
+    "target_section": "rate-limiting-and-backoff",
+    "target_phrase": "apply jittered exponential backoff"
+  },
+  {
+    "query_id": "q11",
+    "query": "How do I stop one failing dependency from consuming every worker?",
+    "query_type": "semantic",
+    "target_section": "bulkhead-isolation",
+    "target_phrase": "independent concurrency budgets"
+  },
+  {
+    "query_id": "q12",
+    "query": "How can a client continue listing records while data changes?",
+    "query_type": "semantic",
+    "target_section": "cursor-pagination",
+    "target_phrase": "opaque cursor pagination"
+  },
+  {
+    "query_id": "q13",
+    "query": "How can I correlate logs metrics and distributed traces for one request?",
+    "query_type": "semantic",
+    "target_section": "observability-and-trace-correlation",
+    "target_phrase": "Logs, metrics exemplars, and distributed traces include this correlation key"
+  },
+  {
+    "query_id": "q14",
+    "query": "How do I avoid serving old metadata after an update?",
+    "query_type": "semantic",
+    "target_section": "caching-and-invalidation",
+    "target_phrase": "Mutation events publish invalidation messages"
+  },
+  {
+    "query_id": "q15",
+    "query": "What mechanism stops repeated calls to an unhealthy upstream?",
+    "query_type": "semantic",
+    "target_section": "circuit-breakers-and-timeouts",
+    "target_phrase": "Circuit breakers prevent repeated calls to an unhealthy upstream"
+  },
+  {
+    "query_id": "q16",
+    "query": "How can I reverse a bad policy rollout?",
+    "query_type": "semantic",
+    "target_section": "configuration-rollback",
+    "target_phrase": "roll back to a prior signed epoch"
+  }
+]

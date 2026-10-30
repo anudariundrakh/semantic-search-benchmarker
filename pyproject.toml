@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-search-benchmarker"
+version = "0.1.0"
+description = "Semantic document search workbench comparing BM25 and dense retrieval across chunking strategies."
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "streamlit>=1.39",
+  "rank-bm25>=0.2.2",
+  "tiktoken>=0.8",
+  "sentence-transformers>=3.2",
+  "chromadb>=0.5",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.24"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

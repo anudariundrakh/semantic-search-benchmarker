@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: semantic-search-benchmarker
+Version: 0.1.0
+Summary: Semantic document search workbench comparing BM25 and dense retrieval across chunking strategies.
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2.8
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.2
+Requires-Dist: streamlit>=1.39
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: tiktoken>=0.8
+Requires-Dist: sentence-transformers>=3.2
+Requires-Dist: chromadb>=0.5
+Requires-Dist: python-dotenv>=1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"
